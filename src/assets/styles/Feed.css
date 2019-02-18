@@ -6,7 +6,7 @@ body{
   background: #fff;
 }
 .feedBody {
-  width: 30em;
+  width: 40em;
   margin: 0 auto;
   z-index: 99;
   display: block;
@@ -18,18 +18,28 @@ body{
   color: #fff;
 }
 .form {
-  color: gray;
+  color: black;
+  font-weight: 100;
   padding: 0 20px 0px 20px;
 }
 .form-body{
   box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
-  border-radius: 1em;
-  margin-top: 1em;
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding-top: 2em;
+  height: 120px;
+  text-align: center;
 }
 
 .options{
-  background-color:#D7722C;
+  background-color: #D7722C;
   height: 2em;
+  width: 14em;
+  border-radius: 2em;
+  margin-left: 2em;
+  text-align: center;
+  font-weight: 100;
 }
 .options p{
   margin-top: 0em;
