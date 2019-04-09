@@ -1,14 +1,23 @@
 import { API } from './api';
 
 export const feedService = {
-  getFeed
+  getFeed, getCategory
 };
 
 function getFeed() {
   const requestOptions = {
     method: 'GET'
   };
-  const API_ = API;
+  const API_ = API+'/random';
+
+  return fetch(API_, requestOptions).then(handleResponse);
+}
+
+function getCategory(query){
+  const requestOptions = {
+    method:'GET'
+  };
+  const API_ = API+ query;
 
   return fetch(API_, requestOptions).then(handleResponse);
 }
